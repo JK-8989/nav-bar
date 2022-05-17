@@ -16,7 +16,7 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: rgb(29, 37, 15);
+  background: rgba(6, 29, 46, 0.98);
 }
 #icon-logo {
   display: flex;
@@ -30,7 +30,7 @@ li {
 }
 #menu> li:hover {
   border-radius: 5px;
-  background: rgba(128, 128, 128, 0.7);
+  background: rgba(47, 185, 212, 0.5);
 }
 #icons-media {
   display: flex;
@@ -67,8 +67,8 @@ li {
     right:20px;
     font-size: 1.2em;
   }
-  #menu.active, 
-  #icons-media.active {
+  #menu.showLists, 
+  #icons-media.showLists {
     display: flex;
   }
 }
