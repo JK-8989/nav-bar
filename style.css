@@ -32,29 +32,43 @@ li {
   border-radius: 5px;
   background: rgba(128, 128, 128, 0.7);
 }
-#icon-bars:hover {
-  border-radius: 5px;
-  background: rgba(128, 128, 128, 0.7);
-}
 #icons-media {
   display: flex;
   padding-right: 20px;
 }
-#icon-bars {
+#icon-hamburger-bars {
   color: rgb(47, 185, 212);
   display: none;
   padding: 5px;
 }
-@media screen and (max-width: 500px){
-  #menu,
+@media screen and (max-width: 600px){
+  .container {
+    height: auto;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #menu {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    padding-left: 0;
+    width: 100%;
+  }
   #icons-media {
     display: none;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
   }
-  #icon-bars {
-    display: block;
-    margin-right: 10px;
+  #icon-hamburger-bars {
+    display:block;
+    position: absolute;
+    top: 15px;
+    right:20px;
+    font-size: 1.2em;
   }
-  #icon-main {
-    padding-left: 0;
+  #menu.active, 
+  #icons-media.active {
+    display: flex;
   }
 }
