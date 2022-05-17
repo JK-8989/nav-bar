@@ -32,7 +32,29 @@ li {
   border-radius: 5px;
   background: rgba(128, 128, 128, 0.7);
 }
+#icon-bars:hover {
+  border-radius: 5px;
+  background: rgba(128, 128, 128, 0.7);
+}
 #icons-media {
   display: flex;
   padding-right: 20px;
+}
+#icon-bars {
+  color: rgb(47, 185, 212);
+  display: none;
+  padding: 5px;
+}
+@media screen and (max-width: 500px){
+  #menu,
+  #icons-media {
+    display: none;
+  }
+  #icon-bars {
+    display: block;
+    margin-right: 10px;
+  }
+  #icon-main {
+    padding-left: 0;
+  }
 }
