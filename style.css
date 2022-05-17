@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+li {
+  list-style: none;
+  padding: 5px 13px;
+  color: rgb(240, 240, 238);
+}
+.fas, 
+.fa-brands {
+  color: rgb(47, 185, 212);
+}
+.container {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(29, 37, 15);
+}
+#icon-logo {
+  display: flex;
+  padding-left: 20px;
+}
+#logo {
+  padding-left: 0;
+}
+#menu {
+  display: flex;
+}
+#menu> li:hover {
+  border-radius: 5px;
+  background: rgba(128, 128, 128, 0.7);
+}
+#icons-media {
+  display: flex;
+  padding-right: 20px;
+}
